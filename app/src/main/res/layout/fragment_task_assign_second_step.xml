@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.romina.staffmanager.fragment.TaskAssignSecondStepFragment"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Step 2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/textView1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="Choose Date and Time for the task"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:id="@+id/textView2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/frame_background_accent"
+        android:orientation="horizontal"
+        android:id="@+id/dateLinearLayout">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/txtDate"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/button_background_accent"
+            android:text="Choose Date"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:id="@+id/btnChooseDate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateLinearLayout"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/frame_background_accent"
+        android:orientation="horizontal"
+        android:id="@+id/timeLinearLayout">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/txtTime"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/button_background_accent"
+            android:text="Choose Time"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:id="@+id/btnChooseTime"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/timeLinearLayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background_accent"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:id="@+id/btnSave"/>
+</RelativeLayout>
